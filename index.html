@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator v1.1</title>
+    <link rel="stylesheet" href="./assets/index.css">
+    <link rel="stylesheet" href="./assets/icons/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <i class="fas fa-calculator" style="font-size:2rem; color: rgb(100, 102, 109);"></i>
+        <input class="space" id="num1" type="number" name="firstnumber" placeholder="Enter First Number" >
+        <input class="space" id="num2"type="number" name="firstnumber" placeholder="Enter Second Number" >
+        <p class="big">Answer is:</p>
+        <div id="answerBox">
+            
+        </div>
+        <div class="contain">
+            
+            <div class="button">
+                <button class="space" onclick="view.addNum()"><i class="fas fa-plus"></i></button>
+                <button class="space" onclick="view.subtractNum()"><i class="fas fa-minus"></i></button>
+                <button class="space big" onclick="view.clearOne()" style = "background-color: #e55039;">C</button>
+            </div>
+            <div class="button">
+                <button class="space" onclick="view.multiplyNum()"><i class="fas fa-times"></i></button>
+                <button class="space" onclick="view.divideNum()"><i class="fas fa-divide"></i></button>
+                <button class="space big" onclick="view.clearAll()" style = "background-color: #68a9cc;">E</button>
+            </div>
+            <div class="button">
+                <button class="space big" onclick="view.factorialNum()">!</button>
+                <button class="space" onclick="view.rootNum()"><i class="fas fa-square-root-alt"></i></button>
+                <button class="space" onclick="view.powerNum()"><i class="fas fa-superscript"></i></button>
+            </div>
+            <div class="button">
+                <button class="space" onclick="view.squareNum()"> <img src="./assets/sq.png" style="color:white;" alt=""> </button>
+                <button class="space" onclick="view.piNum()"><img src="./assets/pi.png" alt=""></button>
+                <button class="space big" style="background-color: #f8b93b;" onclick="view.inputAns()" >=</button>
+            </div>
+        </div>
+</div>
+  <script src = "./index.js"></script>
+  <script src = "./assets/icons/all.js"></script>
+</body>
+</html>
