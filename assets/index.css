@@ -32,7 +32,7 @@ body, input, button {
 }
 
 button {
-  padding: 4rem .7rem;
+  padding: 1.4rem 1.6rem;
   width: auto;
   background-color: transparent;
   border: none;
@@ -57,8 +57,8 @@ button:hover, button:active {
 }
 
 input {
-  padding: .7rem 0;
-  max-width: 85%;
+  padding: .7rem 1rem;
+  max-width: 100%;
   outline-color: var(--bg-col);
 }
 
@@ -91,18 +91,12 @@ input {
 
 @media (max-width: 450px) {
   button {
-    padding: .8rem 1.125rem;
+    padding: .6rem .8rem;
     width: auto;
   }
   input {
-    padding: .4rem 0;
+    padding: .3rem .7rem;
     max-width: 90%;
-  }
-}
-
-@media (min-width: 600px) {
-  button {
-    padding: 1.4rem 1.6rem;
   }
 }
 /*# sourceMappingURL=index.css.map */
